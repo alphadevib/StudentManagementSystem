@@ -11,7 +11,8 @@ const [users,setUsers]=useState([]);
     return (
 
          <>
-         <h1>DashBoard WElcome User</h1>
+         <h1>DashBoard</h1>
+         <h2>Welcome, User!</h2>
 
          <button className="get" onClick={getusers}>getUser</button>
 
@@ -27,7 +28,7 @@ const [users,setUsers]=useState([]);
                {users.map((user)=>(
                  <tr>
                       <td>{user.id}</td>
-                      <td>{user.username}</td>
+                      <td>{user.name}</td>
                       <td>{user.email}</td>
                       <td><button className="up">Update</button></td>
                       <td><button className="de">Delete</button></td>
