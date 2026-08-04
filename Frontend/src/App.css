@@ -1,0 +1,32 @@
+table , th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    
+}
+table{
+    margin-left: 100px;
+}
+.up{
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding:  8px 10px;
+    cursor: pointer;
+  
+}
+.up:hover{
+    background-color: darkblue;
+}
+.de{
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding:  8px 10px;
+    cursor: pointer;
+
+}
+.de:hover{
+    background-color: darkred;
+}

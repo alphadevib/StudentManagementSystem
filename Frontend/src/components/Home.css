@@ -1,0 +1,12 @@
+.get{
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding:  8px 10px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.get:hover{
+    background-color: darkblue;
+}
