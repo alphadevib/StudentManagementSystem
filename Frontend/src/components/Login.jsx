@@ -18,6 +18,7 @@ const navigate=useNavigate();
                const response=await axios.post(`http://localhost:8080/login`,loginUser);
              alert("User Login Success...");
              navigate("/home")
+      localStorage.setItem("student",JSON.stringify(response.data))
          }catch(err){
             alert("Email Or Password iS incorrect..")
          }
