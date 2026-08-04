@@ -3,6 +3,7 @@ import "./Home.css"
 import axios from "axios";
 function Home(){
 const [users,setUsers]=useState([]);
+const student=JSON.parse(localStorage.getItem("student"));
   async  function getusers(){
                 const reponse=   await  axios.get(`http://localhost:8080/get`);
              setUsers(reponse.data);
@@ -46,7 +47,7 @@ const [users,setUsers]=useState([]);
 
          <>
          <h1>Dashboard</h1>
-         <h2>Welcome User !</h2>
+         <h2>Welcome User !{student.email}</h2>
 
          <button className="get" onClick={getusers}>getUser</button>
 
